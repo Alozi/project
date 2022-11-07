@@ -19,7 +19,7 @@ function start() {
     }
 }
 
-//start();
+start();
 
 const personalMoovieDB = {
     count: numberOfFimls,
@@ -31,7 +31,7 @@ const personalMoovieDB = {
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
-        let a = prompt('Один из последних просмотренных фильмов?'),
+        let a = prompt('Один из последних просмотренных фильмов?').trim(),
             b = prompt('На сколько оцените его?');
     
         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
@@ -44,7 +44,7 @@ function rememberMyFilms() {
     }
 }
 
-//rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel() {
     if (personalMoovieDB.count < 10) {
@@ -58,7 +58,7 @@ function detectPersonalLevel() {
     }
 }
 
-//detectPersonalLevel();
+detectPersonalLevel();
 
 function writeYourGenres() {
     for(let i = 1; i <= 3; i++) {
